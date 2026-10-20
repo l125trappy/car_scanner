@@ -1,0 +1,3 @@
+# Car Scanner
+
+Car Scanner is an Android app built with Flutter that lets staff check instantly whether a vehicle is on the current for-sale list by scanning its license plate. The plate scanner uses on-device OCR (Google ML Kit) with a dashed guide rectangle and ignores the country band and dealer stickers, so only the plate text is matched. The sale list can be updated by photographing the printed sheet, which is parsed into rows and checked on an editable review screen, or by importing an Excel (.xlsx) file directly. All data is stored locally in SQLite, so lookups work offline, and each update replaces the previous list. To run it, install Flutter, connect an Android device, and execute `flutter pub get` followed by `flutter run`.
